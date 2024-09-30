@@ -10,7 +10,7 @@ const { chats } = require("./data");
 const connectDB = require("./config/db");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 const { Socket } = require("socket.io");
-const User = require("./models/userModel");
+const User = require("./Models/userModel");
 console.log("Server Started On PORT:", process.env.PORT || "5000 (default)");
 
 connectDB();
